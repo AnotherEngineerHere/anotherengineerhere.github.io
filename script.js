@@ -1,4 +1,7 @@
 // Función para manejar el clic en cualquier parte de la página
+document.addEventListener("DOMContentLoaded", () => {
+  alert(translations[currentLanguage].help); // Muestra la alerta con el mensaje de ayuda
+});
 document.addEventListener("click", handlePageClick);
 
 function handlePageClick(event) {
@@ -18,7 +21,7 @@ const modalBodyElement = document.getElementById("modal-body");
 const closeButtonElement = document.getElementsByClassName("close")[0];
 const skillsChartElement = document.getElementById("skills-chart");
 
-let currentLanguage = "en";
+let currentLanguage = "es";
 let commandHistory = [];
 let historyIndex = -1;
 
